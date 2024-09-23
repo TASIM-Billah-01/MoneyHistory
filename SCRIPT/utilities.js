@@ -1,7 +1,7 @@
 function addMoney(id) {
     let amount = document.getElementById(id).value;
-    amount = parseFloat(amount);
-    return amount;
+        amount = parseFloat(amount);
+        return amount;
 }
 
 function addBalance(params) {

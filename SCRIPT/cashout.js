@@ -11,8 +11,8 @@ addEventListener("click", function(params) {
         return;
     }
 
-    if (typeof cashOut !== "string") {
-        alert("You can't enter string values");
+    if (isNaN(cashOut)) {
+        alert("You can't enter string or undefinied values");
         return;
     }
 

@@ -6,14 +6,19 @@ addEventListener("click", function(event) {
     let addMoneyPin = document.getElementById("add-money-pin").value;
     addMoneyPin = parseFloat(addMoneyPin);
 
+    if (isNaN(userEnter)) {
+        alert("You can't enter string or undefinied values");
+        return;
+    }
+
     if(userEnter < 0) {
         alert("You can't enter negative value");
         return;
     }
-    if (typeof userEnter !== "string") {
-        alert("You can't enter string values");
-        return;
-    }
+   
+
+  
+
     
     if(addMoneyPin === 1234) {
         const totalBalance = userEnter + usertTotal;
@@ -25,6 +30,6 @@ addEventListener("click", function(event) {
        document.getElementById("end").appendChild(p);
 
     } else {
-        console.log("your pin is incorrect . try again");
+        alert("your pin is incorrect . try again");
     }
 })
