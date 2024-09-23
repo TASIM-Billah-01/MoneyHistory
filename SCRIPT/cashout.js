@@ -11,6 +11,11 @@ addEventListener("click", function(params) {
         return;
     }
 
+    if (typeof cashOut !== "string") {
+        alert("You can't enter string values");
+        return;
+    }
+
         if(cashOutPin === 1234) {
             const amountLeft = totalBalance - cashOut;
             document.getElementById("balance").innerText = amountLeft;
